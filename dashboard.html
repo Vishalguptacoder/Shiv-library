@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard | Shiv Library</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body class="dashboard-body">
+  <header class="dashboard-header">
+    <h2 style="text-align: center;">🛠️ Admin Dashboard</h2>
+    <p id="dateTime" style="text-align: center; font-size: 0.9rem; color: #aaa;"></p>
+  </header>
+
+  <section class="dashboard-cards">
+    <div class="dash-card" onclick="location.href='studentlist.html'">📋<br />All Students</div>
+    <div class="dash-card" onclick="location.href='Join.html'">➕<br />Add Student</div>
+    <div class="dash-card" onclick="location.href='fee.html'">💰<br />Fee Records</div>
+    <div class="dash-card" onclick="location.href='attendance.html'">📅<br />Attendance Logs</div>
+    <div class="dash-card" onclick="location.href='sendnotice.html'">📢<br />Send Notice</div>
+    <div class="dash-card" onclick="location.href='viewnotices.html'">📄<br />View Notices</div>
+    <div class="dash-card" onclick="location.href='report.html'">📈<br />Daily Report</div>
+    <div class="dash-card" onclick="adminLogout()">🚪<br />Logout</div>
+  </section>
+
+  <div style="text-align: center; margin-top: 20px;">
+    <p style="color: #888;">Powered by Shiv Library</p>
+  </div>
+</body>
+</html>
