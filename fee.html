@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fee Status | Shiv Library</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard-body">
+  <header class="dashboard-header">
+    <h2 style="text-align: center;">💰 Fee Status</h2>
+  </header>
+
+  <section class="fee-container">
+    <div class="fee-card">
+      <p><strong>Status:</strong> <span id="feeStatusText">Loading...</span></p>
+      <p><strong>Total Fee:</strong> ₹<span id="totalFee">--</span></p>
+      <p><strong>Paid:</strong> ₹<span id="paidFee">--</span></p>
+      <p><strong>Due:</strong> ₹<span id="dueFee">--</span></p>
+      <p><strong>Due Date:</strong> <span id="dueDate">--</span></p>
+    </div>
+  </section>
+
+  <!-- 🔧 Admin Fee Update Form -->
+  <section id="adminFeeForm" class="fee-update-form" style="display: none; margin: 30px auto; max-width: 300px;">
+    <h3 style="text-align: center;">Admin: Update Fee Status</h3>
+    <input type="text" id="feeSeatNumber" placeholder="Enter Seat Number" />
+    <select id="newFeeStatus">
+      <option value="">Select Status</option>
+      <option value="Paid">Paid</option>
+      <option value="Unpaid">Unpaid</option>
+    </select>
+    <button id="updateFeeBtn" class="btn" style="margin-top: 10px;">Update Fee</button>
+    <p id="feeUpdateMessage" style="text-align: center;"></p>
+  </section>
+
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="index.html" class="btn">⬅️ Back to Library</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
