@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiv Library</title>
+    <link rel="icon" type="image/jpg" href="card/favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Lottie Files CDN -->
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <!--this is a navbar-->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="index.html" class="navbar-logo">Shiv Library</a>
+                <button class="navbar-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="navbar-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#facilities">Facilities</a></li>
+                    <li><a href="fee.html" target="_blank">Fees</a></li>
+                    <li><a href="attendance.html" target="_blank">Attendance</a></li>
+                    <li><a href="seat.html" target="_blank">Seat Availability</a></li>
+                    <li><a href="login.html" target="_blank">Login</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <div class="welcome-content">
+                <h1>Welcome to <span class="highlight">Shiv Library</span> 📚</h1>
+                <p id="motivational-text" class="motive-text"></p>
+                <p class="join-text">
+                    A peaceful study zone where every hour takes you one step closer to your dream. Join us and become
+                    the topper you were born to be!
+                </p>
+                <a href="https://wa.me/917518455083" class="join-button" target="_blank">Join Now</a>
+            </div>
+        </section>
+        <!-- === Attendance & Features Section === -->
+        <!-- === Attendance & Features Section === -->
+        <section class="features-section">
+            <div class="features-container">
+                <div class="top-cards">
+
+                    <a href="attendance.html" class="feature-card" target="_blank">
+                        <i class="fas fa-user-check"></i>
+                        <h3>Attendance</h3>
+                        <p>Mark your presence with a tap.</p>
+                    </a>
+
+                    <a href="fee.html" class="feature-card" target="_blank">
+                        <i class="fas fa-rupee-sign"></i>
+                        <h3>Fee Status</h3>
+                        <p>Check if your dues are cleared.</p>
+                    </a>
+
+                    <a href="seat.html" class="feature-card" target="_blank">
+                        <i class="fas fa-chair"></i>
+                        <h3>Seat Availability</h3>
+                        <p>Know how many seats are left.</p>
+                    </a>
+
+                    <a href="scan.html" class="feature-card" target="_blank">
+                        <i class="fas fa-qrcode"></i>
+                        <h3>Scan for Attendance</h3>
+                        <p>Instant QR check-in system.</p>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="top-performers-section" id="top-performers">
+            <div class="container">
+                <h2 class="section-title">🏆 Top 5 Performers</h2>
+                <div id="topPerformers" class="performer-grid">
+                    <!-- Top 5 students yahan dynamically add honge -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 FACILITIES SECTION START -->
+        <section id="facilities" class="facility-section">
+            <h2 class="facility-heading">Facilities at Shiv Library</h2>
+
+            <div class="facility-container">
+                <div class="facility-card">❄️ Air Conditioned Hall</div>
+                <div class="facility-card">📶 Unlimited Free Wi-Fi</div>
+                <div class="facility-card">🔆 Solar Powered Backup</div>
+                <div class="facility-card">🚰 RO Water Machine</div>
+                <div class="facility-card">🪑 2×2 Wide Table & Comfortable Chair</div>
+                <div class="facility-card">🔌 Charging Points</div>
+                <div class="facility-card">🌿 Balcony Refreshment Area</div>
+                <div class="facility-card">🍱 Lunch Hall</div>
+                <div class="facility-card">👥 Group Discussion Hall</div>
+                <div class="facility-card">🚻 Clean Washroom</div>
+                <div class="facility-card">🅿️ Free Parking</div>
+                <div class="facility-card">🎥 24×7 CCTV Surveillance</div>
+            </div>
+        </section>
+        <!-- 🌟 FACILITIES SECTION END -->
+        <section class="vision-section">
+            <div class="vision-glow-box">
+                <h2 class="vision-title">Our Vision</h2>
+                <p class="vision-text">
+                    To create a motivating and peaceful learning environment where every student feels inspired to
+                    study, grow, and achieve success.
+                </p>
+            </div>
+        </section>
+        <section id="gallery-section" class="gallery-section">
+            <h2 class="gallery-title">Gallery</h2>
+            <div class="gallery-grid">
+                <!-- You can duplicate these image cards to add more -->
+                <div class="gallery-card">
+                    <img src="card/image1.jpg" alt="Gallery Image 1">
+                </div>
+                <div class="gallery-card">
+                    <img src="card/image2.jpg" alt="Gallery Image 2" class="zoom">
+                </div>
+                <div class="gallery-card">
+                    <img src="card/image3.jpg" alt="Gallery Image 3">
+                </div>
+                <div class="gallery-card">
+                    <img src="card/image4.jpg" alt="Gallery Image 4">
+                </div>
+            </div>
+        </section>
+
+        <!--location embedded and contact details-->
+        <section class="contact-section">
+            <div class="contact-container">
+                <h2 class="contact-heading">Find Us</h2>
+                <div class="map-and-info">
+                    <div class="map-box">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.270736661652!2d83.64121689999999!3d26.735735199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3993e170519ddc23%3A0xa868120fdcfa624c!2sShiv%20library!5e0!3m2!1sen!2sin!4v1752814572024!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="info-box">
+                        <h3>Shiv Library</h3>
+                        <p><strong>📍 Address:</strong> Jolhiniya chauraha,Shukrauli,near DTDC sahaj jan(near Singh
+                            medical store)</p>
+                        <p><strong>📞 Phone:</strong> +91-7518455083</p>
+                        <p><strong>✉ Instagram: </strong>shiv_library</p>
+                        <p><strong>🕘 Timings:</strong> 24 hours open everyday</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--this is a testimonial and faq section-->
+        <section class="testimonials">
+            <h2>What Students Say</h2>
+            <p class="subtitle">Real experiences from our library members</p>
+            <div class="testimonial-cards">
+                <div class="testimonial">
+                    <p>“Peaceful study vibes, strong WiFi and comfortable seating. I love this place!”</p>
+                    <span>— Smrita</span>
+                </div>
+                <div class="testimonial">
+                    <p>“Best library in town. Solar backup & AC makes studying during powercuts easy.”</p>
+                    <span>— Rishabh</span>
+                </div>
+                <div class="testimonial">
+                    <p>“Safe environment, clean washroom, and refreshment zone — all in one.”</p>
+                    <span>— Archana</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <button class="faq-question">📌 What are the library timings?</button>
+                <div class="faq-answer">Library is open for 24hr everyday.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">📌 Is there a membership fee?</button>
+                <div class="faq-answer">Yes, ₹500 per month with all amenities included.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">📌 Is there a lunch hall and seating hall?</button>
+                <div class="faq-answer">Yes, there is a seperated hall for Lunch and Discussion </div>
+            </div>
+        </section>
+        <!--this is for fees price-->
+        <section id="fee-plans" class="fee-plans-section">
+            <h2 class="section-title">Our Fee Plans</h2>
+            <div class="plans-container">
+
+                <!-- Plan 0 -->
+                <div class="plan-card">
+                    <h3>Day Plan</h3>
+                    <p class="price">₹30</p>
+                    <p class="hours">For 1 day</p>
+                    <a href="https://wa.me/917518455083" target="_blank">
+                        <button class="join-btn">Join Now</button></a>
+                </div>
+                <!-- Plan 1 -->
+                <div class="plan-card">
+                    <h3>Basic Plan</h3>
+                    <p class="price">₹500</p>
+                    <p class="hours">For 6 Hours</p>
+                    <a href="https://wa.me/917518455083" target="_blank">
+                        <button class="join-btn">Join Now</button></a>
+                </div>
+
+                <!-- Plan 2 -->
+                <div class="plan-card">
+                    <h3>Standard Plan</h3>
+                    <p class="price">₹600</p>
+                    <p class="hours">For 10 Hours</p>
+                    <a href="https://wa.me/917518455083" target="_blank">
+                        <button class="join-btn">Join Now</button></a>
+                </div>
+
+                <!-- Plan 3 -->
+                <div class="plan-card">
+                    <h3>Premium Plan</h3>
+                    <p class="price">₹650</p>
+                    <p class="hours">For 12+ Hours</p>
+                    <a href="https://wa.me/917518455083" target="_blank">
+                        <button class="join-btn">Join Now</button></a>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <!-- this is for back to top-->
+    <!-- Back to Top Button (Centered Above Footer) -->
+    <div class="back-to-top-wrapper">
+        <button id="backToTopBtn" title="Go to top">⬆</button>
+    </div>
+    <!--this is for social media link-->
+    <section class="social-media">
+        <h2>Follow Us</h2>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/shiv_library?igsh=dWxiYWpxNzBuZG52" target="_blank"
+                class="social-icon fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/shiv_library?igsh=dWxiYWpxNzBuZG52" target="_blank"
+                class="social-icon ig"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/917518455083" target="_blank" class="social-icon wa"><i
+                    class="fab fa-whatsapp"></i></a>
+            <a href="https://maps.app.goo.gl/ipzdqq91tFS7MrvQ9?g_st=ac" target="_blank" class="social-icon gm"><i
+                    class="fas fa-map-marker-alt"></i></a>
+        </div>
+    </section>
+    <!-- Shiv AI Chatbot Section -->
+    <!-- Shiv AI Section -->
+    <div class="shiv-ai-container">
+        <div id="shiv-ai-message" class="popup-message">Hi! I'm Shiv AI 🤖<br>Ask me anything!</div>
+
+        <!-- Floating Bot -->
+        <div class="shiv-ai-bubble" id="shiv-ai-btn">
+            <dotlottie-wc src="https://lottie.host/68817de4-f9d7-4317-9964-23a00a7b4a18/pFoFXIQ6vk.lottie" style="width: 300px;height: 300px; border-radius: 50%; overflow: hidden; display: block;" autoplay loop></dotlottie-wc>
+        </div>
+
+        <!-- Sliding Chatbox -->
+        <div class="shiv-ai-chatbox" id="shiv-ai-chatbox">
+            <div class="chatbox-header">
+                Shiv AI 🤖
+                <span id="close-chat">×</span>
+            </div>
+            <div class="chatbox-body" id="chatbox-body">
+                <div class="ai-message">Hi! I'm Shiv AI, how can I help you?</div>
+            </div>
+            <div class="chatbox-input">
+                <input type="text" id="user-input" placeholder="Type your message..." />
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+    <!--this is for live counter-->
+    <!-- 🔥 Visitor Counter Section -->
+    <section class="visitor-counter">
+        <div class="visitor-box">
+            <p>Total Visitors</p>
+            <span id="visitorCount">Loading...</span>
+            <button onclick="refreshCount()">🔄 Refresh</button>
+        </div>
+    </section>
+
+
+    <!-- this is a footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Shiv Library</h3>
+                <p>Creating the perfect study environment with comfort, technology, and discipline for every student’s
+                    success journey.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Attendance</a></li>
+                    <li><a href="#">Fee Plans</a></li>
+                    <li><a href="#">Facilities</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>📍 Jolhiniya chauraha,Shukrauli,near DTDC sahaj jan(near Singh medical store) </p>
+                <p>📞 +91-7518455083</p>
+                <p>✉️ shiv_library</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>©️ 2025 Shiv Library. All rights reserved.</p>
+            <p class="designer">Designed with 🖤 <span>Vishal Gupta</span></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
