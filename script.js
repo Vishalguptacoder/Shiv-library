@@ -150,7 +150,7 @@ function getAIReply(input) {
   } else if (input.includes("attendance")) {
     reply = "Attendance is updated daily. Use the 'Scan for Attendance' button!";
   } else if (input.includes("location")) {
-    reply = "We are located at Shiv Library, 2nd floor, [olhiniya chauraha,Shukrauli,near DTDC sahaj jan(near Singh medical store)]";
+    reply = "We are located at Shiv Library, 2nd floor, [Jolhiniya chauraha,Shukrauli,near DTDC sahaj jan(near Singh medical store)]";
   } else if (input.includes("contact")) {
     reply = "You can contact us at 7518455083 📞";
   } else if (input.includes("hours") || input.includes("timing")) {
