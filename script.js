@@ -163,29 +163,4 @@ function getAIReply(input) {
 
   appendMessage("ai", reply);
 }
-//this is for live counter//
-firebase.initializeApp(firebaseConfig);
-let db = firebase.firestore();
-
-function refreshCount() {
-  let counterRef = db.collection("visitorCounter").doc("count");
-
-  db.runTransaction((t) => {
-    return t.get(counterRef).then((doc) => {
-      let newCount = (doc.exists ? doc.data().value : 0) + 1;
-      t.set(counterRef, { value: newCount });
-      return newCount;
-    });
-  })
-  .then((finalCount) => {
-    document.getElementById("visitorCount").innerText = finalCount;
-  })
-  .catch((err) => {
-    console.log(err);
-    document.getElementById("visitorCount").innerText = "Error!";
-  });
-}
-
-// Auto load once when page loads
-refreshCount();
 
