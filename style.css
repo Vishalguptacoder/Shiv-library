@@ -948,58 +948,6 @@ max-width: 1600px;
   }
 }
 
-/*this is for live counter*/
-.visitor-counter {
-  padding: 30px 10px;
-  background: #0f0f0f;
-  text-align: center;
-  border-top: 1px solid #333;
-}
-
-.visitor-box {
-  display: inline-block;
-  padding: 20px 30px;
-  border-radius: 12px;
-  background: #111;
-  box-shadow: 0 0 15px #00f7ff, 0 0 25px #00c9ff inset;
-  color: #fff;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.visitor-box p {
-  margin: 0;
-  font-size: 18px;
-  letter-spacing: 1px;
-  color: #00ffff;
-}
-
-#visitorCount {
-  display: block;
-  margin-top: 10px;
-  font-size: 28px;
-  font-weight: bold;
-  color: #5ccfcf;
-  text-shadow: 0 0 5px #00fff7;
-}
-
-.visitor-box button {
-  margin-top: 15px;
-  padding: 8px 20px;
-  font-size: 14px;
-  border: none;
-  border-radius: 20px;
-  background: #00ffff;
-  color: #000;
-  cursor: pointer;
-  box-shadow: 0 0 10px #00ffff, 0 0 20px #00eaff;
-  transition: 0.3s;
-}
-
-.visitor-box button:hover {
-  background: #0ff;
-  box-shadow: 0 0 15px #0ff, 0 0 25px #0ff;
-  transform: scale(1.05);
-}
 
 /*this is for login*/
 /* Login Page Styling */
@@ -1036,14 +984,7 @@ max-width: 1600px;
 .login-container button:hover {
   background: #00d6b2;
 }
-
-
-
-
-
 /* this is for student dashboard*/
-/* Paste these at end of your CSS file */
-
 .dashboard-body {
   background: #121212;
   color: #fff;
