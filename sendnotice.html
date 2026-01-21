@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Send Notice | Shiv Library</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard-body">
+  <header class="dashboard-header">
+    <h2 style="text-align: center;">📢 Send a New Notice</h2>
+  </header>
+
+  <section class="form-section">
+    <form action="thankyou.html" method="GET" class="form-container">
+      <label for="noticeTitle"><strong>Notice Title:</strong></label>
+      <input type="text" id="noticeTitle" name="noticeTitle" placeholder="e.g. Library Closed Tomorrow" required />
+
+      <label for="noticeMessage"><strong>Notice Message:</strong></label>
+      <textarea id="noticeMessage" name="noticeMessage" placeholder="Type full notice here..." rows="6" required></textarea>
+
+      <button type="submit" class="btn">📤 Send Notice</button>
+    </form>
+  </section>
+
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="admin.html" class="btn">⬅️ Back to Admin Panel</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
