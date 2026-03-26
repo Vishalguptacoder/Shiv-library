@@ -42,14 +42,14 @@ typeWriter();
 
 // Dummy data — replace with real student data from backend later
 const students = [
-  { name: "Sadhna", attendance: 99 },
-  { name: "Alok Gupta", attendance: 99 },
-  { name: "Kanak", attendance: 98 },
-  { name: "Krishna Chaudhary", attendance: 97 },
-  { name: "Rishabh Chauhan", attendance: 96 },
-  { name: "Deepak", attendance: 94 },
-  { name: "Atul Dubey", attendance: 90 },
-  { name: "Vikas", attendance: 90 },
+  { name: "Kanak Patel", attendance: 99 },
+  { name: "Priyanshu Patel", attendance: 99 },
+  { name: "Deepak", attendance: 98 },
+  { name: "Ujala Yadav", attendance: 97 },
+  { name: "Adarsh", attendance: 96 },
+  { name: "Satyendra", attendance: 94 },
+  { name: "Sanju", attendance: 90 },
+  { name: "Mandeep", attendance: 90 },
 ];
 
 // Rank badge titles
