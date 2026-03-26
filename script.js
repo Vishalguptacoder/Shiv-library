@@ -44,12 +44,12 @@ typeWriter();
 const students = [
   { name: "Kanak Patel", attendance: 99 },
   { name: "Priyanshu Patel", attendance: 99 },
-  { name: "Deepak", attendance: 98 },
+  { name: "Sanjana", attendance: 98 },
   { name: "Ujala Yadav", attendance: 97 },
   { name: "Adarsh", attendance: 96 },
   { name: "Satyendra", attendance: 94 },
   { name: "Sanju", attendance: 90 },
-  { name: "Mandeep", attendance: 90 },
+  { name: "Deepak", attendance: 90 },
 ];
 
 // Rank badge titles
